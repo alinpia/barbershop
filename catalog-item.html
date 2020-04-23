@@ -18,8 +18,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a class="button login-link">Вход</a></li>
-                <!-- У Academy здесь не button, а ничего. (?) -->
+                <li><a href="#" class="login-link">Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -39,8 +38,6 @@
                 <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора.">
             </p>
             <ul class="product-photo-preview">
-                <!-- Повсюду указать размер для всех изображений -->
-                <!-- У HTML Academy сделано без ссылок. (?) -->
                 <li>
                     <a href="#"><img src="img/product-small-1.jpg" with="140" height="149" alt="Фото всего набора в ряд."></a>
                 </li>
@@ -61,7 +58,6 @@
             </p>
             <p class="product-price">
                 <b>2 900 ₽</b>
-                 <!-- Что с такими иконками? -->
                 <a class="button" href="#">Купить</a>
             </p>
         </section>
@@ -105,9 +101,28 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
-        <!-- Здесь будет форма. -->
-        <button class="modal-close">x</button>
-        <!-- Почему не button? -->
+        <form class="login-form" action="" method="post">
+            <p>
+                <label class="visually-hidden">
+                    Логин
+                    <input type="text" name="login" placeholder="Логин">
+                </label>
+            </p>
+            <p>
+                <label class="visually-hidden">
+                    Пароль
+                    <input type="password" name="password" placeholder="Пароль">
+                </label>
+            </p>
+            <p class="extra-actions">
+                <input type="checkbox" name="remember" id="remember_user" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <label for="remember-user">Запомните меня</label>
+            </p>
+            <a href="#">Я забыл пароль!</a>          
+            <button class="button" type="submit" action="" method="post">Войти</button>
+        </form>
+        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
     </section>
 </body>
 </html>

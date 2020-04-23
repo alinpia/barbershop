@@ -18,8 +18,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a class="button login-link">Вход</a></li>
-                <!-- У Academy здесь не button, а ничего. (?) -->
+                <li><a href="#" class="login-link">Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -65,9 +64,8 @@
                     <img src="img/studio.jpg" width="286" height="164" alt="Интерьер.">
                 </a>
             </figure>   
-            <button class="button gallery-button">Назад</button>
-            <button class="button gallery-button">Вперёд</button>
-            <!-- У Academy здесь не button, а span. (?) -->
+            <button type="button" class="button gallery-button">Назад</button>
+            <button type="button" class="button gallery-button">Вперёд</button>
         </section>
         <section class="contacts">
             <h2>Контактная информация</h2>
@@ -87,7 +85,33 @@
         <section class="appointment">
             <h2>Записаться</h2>
             <p class="appointment-info">Укажите желаемую дату и время, и мы свяжемся с вами для подтверждения брони</p>
-            <!-- Здесь будет форма. -->
+            <form class="appointment-form" action="" method="post">
+                <p class="appointment-item">
+                   <label>
+                       Дата
+                       <input type="text" name="date" placeholder="08.10.2017">
+                   </label>
+                </p>
+                <p class="appointment-item">
+                    <label>
+                        Время
+                        <input type="text" name="time" value="" placeholder="10:00">
+                    </label>
+                </p>
+                <p class="appointment-item">
+                    <label>
+                        Ваше имя
+                        <input type="text" name="name" value="" placeholder="Борода">
+                    </label>
+                </p>
+                <p class="appointment-item">
+                    <label>
+                        Телефон
+                        <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+                    </label>
+                </p>
+            <button class="button" type="submit">Отправить</button>
+            </form>
         </section>
     </main>
     <footer class="main-footer">
@@ -119,14 +143,35 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
-        <!-- Здесь будет форма. -->
-        <button class="modal-close">x</button>
-        <!-- Почему не button? -->
+        <form class="login-form" action="" method="post">
+            <p>
+                <label class="visually-hidden">
+                    Логин
+                    <input type="text" name="login" placeholder="Логин">
+                </label>
+            </p>
+            <p>
+                <label class="visually-hidden">
+                    Пароль
+                    <input type="password" name="password" placeholder="Пароль">
+                </label>
+            </p>
+            <p class="extra-actions">
+                <input type="checkbox" name="remember" id="remember_user" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <label for="remember-user">Запомните меня</label>
+            </p>
+            <a href="#">Я забыл пароль!</a>          
+            <button class="button" type="submit" action="" method="post">Войти</button>
+        </form>
+        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button class="modal-close">x</button>
-        <!-- Почему не button? -->
+        <p>
+            <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">
+        </p>
+        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
     </section>
 </body>
 </html>

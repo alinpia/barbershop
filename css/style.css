@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #0f0f0f;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('../img/background-image.jpg');
+    color: #ffffff;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    text-align: center;
+    text-transform: inherit;
+    vertical-align: middle;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+.main-navigation {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-navigation a {
+    color: #ffffff;
+}
+
+.website-navigation,
+.user-navigation,
+.benefits-list,
+.news-list,
+.social-list,
+.footer-social-list {
+    list-style: none;
+}
+
+.website-navigation a:hover,
+.website-navigation a:focus,
+.website-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.website-navigation a:active {
+    background-color: #242424;
+}
+
+.benefits h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.benefits-list {
+    color: #f7f4f1;
+}
+
+.content-columns {
+    background-color: #f8f5f2;
+    background-image: url('../img/gradient_pattern.png');
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #000000;
+}
+
+.content-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.appointment input {
+    background-color: transparent;
+    border: 2px solid #000000;
+    font: inherit;
+}
+
+.appointment input:focus,
+.appointment input:active {
+    border-color: #663d15;
+}
+
+.main-footer,
+.main-footer a {
+    color: #ffffff;
+}
+
+.main-footer {
+    background-color: #010101;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-image: url('../img/gradient_pattern_footer.png');
+}
+
+.footer-contacts a {
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.modal-login {
+    background-color: #f9f6f3;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-image: url('../img/gradient_pattern.png');
+    color: #000000;
+}
+
+.modal-login a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.modal-login a:hover,
+.modal-login a:focus {
+    text-decoration: none;
+}
+
+.modal-login h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-login input {
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    color: #000000;
+    font: inherit;
+    text-transform: uppercase;
+}
+
+.modal-login input:focus,
+.modal-login input:active {
+    border-color: #663d15;
+}
+
+.remember-user-label {
+    cursor: pointer;
+}
+
+.remember-user-label:hover,
+.remember-user-label:active {
+    color: #663d15;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    text-align: center;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+

@@ -21,6 +21,14 @@ body {
     text-transform: uppercase;
 }
 
+.inner-page {
+    background-color: #f8f5f2;
+    background-image: url('../img/gradient_pattern.png');
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #000000;
+}
+
 img {
     max-width: 100%;
 }
@@ -44,6 +52,125 @@ a {
 .button:focus,
 .button:active {
     background-color: #663d15;
+}
+
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: #aba9a7;
+    cursor: default;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filters legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filters ul {
+    line-height: 18px;
+    list-style: none;
+}
+
+.filters label {
+    cursor: pointer;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label,
+.filter-input:active + label {
+    color: #663d15;
+}
+
+.filter-input:disabled + label {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+.catalog-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item-category {
+    text-transform: none;
+}
+
+.catalog-item-title {
+    text-transform: uppercase;
+}
+
+.catalog-item-price b {
+    background-color: #e5e5e5;
+    line-height: 18px;
+}
+
+.catalog-item-price a {
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus
+.pagination-item-current a:active {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: default;
 }
 
 .main-navigation {
@@ -119,9 +246,9 @@ a {
 
 .main-footer {
     background-color: #010101;
+    background-image: url('../img/gradient_pattern_footer.png');
     background-position: 0 0;
     background-repeat: repeat;
-    background-image: url('../img/gradient_pattern_footer.png');
 }
 
 .footer-contacts a {
@@ -141,9 +268,9 @@ a {
 
 .modal-login {
     background-color: #f9f6f3;
+    background-image: url('../img/gradient_pattern.png');
     background-position: 0 0;
     background-repeat: repeat;
-    background-image: url('../img/gradient_pattern.png');
     color: #000000;
 }
 
@@ -200,5 +327,4 @@ a {
     position: absolute;
     width: 1px;
 }
-
 

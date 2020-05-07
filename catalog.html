@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Barbershop BORODINSKI</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
@@ -242,25 +242,30 @@
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <form class="login-form" action="" method="post">
             <p>
-                <label class="visually-hidden">
-                    Логин
-                    <input type="text" name="login" placeholder="Логин">
-                </label>
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input id="user-login" type="text" name="login" placeholder="Логин">
             </p>
             <p>
-                <label class="visually-hidden">
-                    Пароль
-                    <input type="password" name="password" placeholder="Пароль">
-                </label>
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
             </p>
             <p class="extra-actions">
-                <input type="checkbox" name="remember" id="remember_user" class="visually-hidden">
-                <span class="checkbox-indicator"></span>
-                <label for="remember-user">Запомните меня</label>
+                <label class="remember-user-label" for="remember-user">
+                    <input type="checkbox" name="remember" id="remember-user" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
             </p>
             <a href="#">Я забыл пароль!</a>          
             <button class="button" type="submit" action="" method="post">Войти</button>
         </form>
+        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+            <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">
+        </p>
         <button type="button" class="modal-close" aria-label="Закрыть">x</button>
     </section>
 </body>

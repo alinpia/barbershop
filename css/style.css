@@ -21,6 +21,10 @@ body {
     text-transform: uppercase;
 }
 
+.main-header {
+    margin-bottom: 73px;
+}
+
 .inner-page {
     background-color: #f8f5f2;
     background-image: url('../img/gradient_pattern.png');
@@ -203,14 +207,36 @@ a {
 }
 
 .main-navigation {
-    background-color: #000000;
+    align-items: center;
+    background-color: transparent;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 20px;
 }
 
 .main-navigation a {
     color: #ffffff;
+}
+
+.main-navigation-logo {
+    height: 155px;
+    order: 2;
+    width: 371px;
+}
+
+.main-navigation-wrapper {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.main-navigation-wrapper .container {
+    justify-content: space-between;
+    display: flex;
 }
 
 .website-navigation,
@@ -220,6 +246,8 @@ a {
 .social-list,
 .footer-social-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .website-navigation a:hover,
@@ -227,17 +255,38 @@ a {
 .website-navigation a:active,
 .user-navigation a:hover,
 .user-navigation a:focus,
-.website-navigation a:active {
+.user-navigation a:active {
     background-color: #242424;
 }
 
-.benefits h3 {
-    font-size: 30px;
-    line-height: 42px;
+.website-navigation {
+    width: 620px;
+}
+
+.user-navigation {
+    width: 140px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
 }
 
 .benefits-list {
     color: #f7f4f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-item {
+    width: 300px;
+    text-align: center;
+}
+
+.benefits-item h3 {
+    font-size: 30px;
+    line-height: 42px;
 }
 
 .content-columns {
@@ -245,7 +294,27 @@ a {
     background-image: url('../img/gradient_pattern.png');
     background-position: 0 0;
     background-repeat: repeat;
-    color: #000000;
+    color: #000000; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    padding: 55px 80px 50px;
+}
+
+.news {
+    width: 380px;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
 }
 
 .content-columns h2 {
@@ -278,6 +347,12 @@ a {
     background-image: url('../img/gradient_pattern_footer.png');
     background-position: 0 0;
     background-repeat: repeat;
+    margin-top: 65px;
+    padding: 60px 0;
+}
+
+.main-footer .container {
+    display: flex;
 }
 
 .footer-contacts a {
@@ -340,10 +415,24 @@ a {
     color: #663d15;
 }
 
-.footer-contacts,
 .footer-social,
 .footer-copyright {
     text-align: center;
+}
+
+.footer-contacts {
+    margin: 0;
+    width: 320px;
+}
+
+.footer-social {
+    margin-left: 80px;
+    width: 140px;
+}
+
+.footer-copyright {
+    margin: 0 0 0 auto;
+    width: 140px;
 }
 
 .visually-hidden {
@@ -356,4 +445,3 @@ a {
     position: absolute;
     width: 1px;
 }
-

@@ -12,16 +12,20 @@
             <a class="main-navigation-logo" href="index.html">
                 <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Borodinski».">
             </a>
-            <ul class="website-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li class="website-navigation-current"><a>Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li><a href="#" class="login-link">Вход</a></li>
-            </ul>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="website-navigation">
+                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="price.html">Прайс-лист</a></li>
+                        <li class="website-navigation-current"><a>Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li><a href="#" class="login-link">Вход</a></li>
+                    </ul>
+                </div> 
+            </div>
         </nav>
     </header>
     <main class="container">
@@ -212,32 +216,34 @@
         </section>
     </main>
     <footer class="main-footer">
-        <p class="footer-contacts">
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7 (495) 666-02-66
-        </p>
-        <div class="footer-social">
-            <b>Давайте дружить!</b>
-            <ul class="footer-social-list">
-                <li>
-                    <a class="social-button" href="#">ВКонтакте</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Facebook</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Instagram</a>
-                </li>
-            </ul>
+        <div class="container">
+            <p class="footer-contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
+                <a href="map.html">Как нас найти?</a><br>
+                Телефон: +7 (495) 666-02-66
+            </p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul class="footer-social-list">
+                    <li>
+                        <a class="social-button" href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            </p>
         </div>
-        <p class="footer-copyright">
-            <b>Разработано:</b>
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
     </footer>
-    <section class="modal modal-login">
+    <section class="modal modal-login visually-hidden">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <form class="login-form" action="" method="post">
@@ -261,7 +267,7 @@
         </form>
         <button type="button" class="modal-close" aria-label="Закрыть">x</button>
     </section>
-    <section class="modal modal-map">
+    <section class="modal modal-map visually-hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
             <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">

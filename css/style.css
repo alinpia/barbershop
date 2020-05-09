@@ -33,6 +33,30 @@ body {
     color: #000000;
 }
 
+.inner-page .main-header {
+    margin-bottom: 60px;
+}
+
+.inner-page .main-navigation-logo {
+    height: 24px;
+    margin: 23px 20px;
+    order: 0;
+    width: 111px;
+}
+
+.inner-page .main-header {
+    background-color: #000000;
+}
+
+.inner-page .main-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-page .main-footer {
+    margin-top: 50px;
+}
+
 img {
     max-width: 100%;
 }
@@ -61,10 +85,14 @@ a {
 .page-title {
     font-size: 30px;
     line-height: 42px;
+    margin-bottom: 30px;
 }
 
 .breadcrumbs {
+    display: flex;
     list-style: none;
+    margin: 0 0 60px 0;
+    padding: 0;
 }
 
 .breadcrumbs a {
@@ -118,11 +146,14 @@ a {
 .filters legend {
     font-size: 24px;
     line-height: 30px;
+    padding: 0;
 }
 
 .filters ul {
     line-height: 18px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filters label {
@@ -140,13 +171,41 @@ a {
     opacity: 0.5;
 }
 
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-filters {
+    width: 180px;
+}
+
+.catalog-filters fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog {
+    width: 700px;
+}
+
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
 }
 
 .catalog-item {
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px 20px 0;
+    width: 220px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
   
 .catalog-item:hover {
@@ -181,7 +240,10 @@ a {
 }
 
 .pagination-list {
+    display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .pagination-item a {

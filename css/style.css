@@ -22,7 +22,7 @@ body {
 }
 
 .main-header {
-    margin-bottom: 73px;
+    margin-bottom: 75px;
 }
 
 .inner-page {
@@ -34,6 +34,7 @@ body {
 }
 
 .inner-page .main-header {
+    background-color: #000000;
     margin-bottom: 60px;
 }
 
@@ -42,10 +43,6 @@ body {
     margin: 23px 20px;
     order: 0;
     width: 111px;
-}
-
-.inner-page .main-header {
-    background-color: #000000;
 }
 
 .inner-page .main-navigation {
@@ -58,6 +55,7 @@ body {
 }
 
 img {
+    height: auto;
     max-width: 100%;
 }
 
@@ -70,7 +68,10 @@ a {
     border: none;
     color: #ffffff;
     cursor: pointer;
+    display: inline-block;
     font: inherit;
+    margin-right: 14px;
+    padding: 10px 30px;
     text-align: center;
     text-transform: inherit;
     vertical-align: middle;
@@ -80,6 +81,13 @@ a {
 .button:focus,
 .button:active {
     background-color: #663d15;
+}
+
+.button:disabled,
+.button.disabled {
+    background-color: #000000;
+    cursor: default;
+    opacity: 0.5;
 }
 
 .page-title {
@@ -354,6 +362,10 @@ a {
     padding: 0;
 }
 
+.news-list {
+    margin-bottom: 25px;
+}
+
 .website-navigation a:hover,
 .website-navigation a:focus,
 .website-navigation a:active,
@@ -363,18 +375,55 @@ a {
     background-color: #242424;
 }
 
+.user-navigation a:hover::before,
+.user-navigation a:focus::before,
+.user-navigation a:active::before {
+    opacity: 1;
+}
+
 .website-navigation {
+    display: flex;
+    flex-wrap: wrap;
     width: 620px;
 }
 
+.website-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 25px 20px;
+}
+
+.user-navigation .login-link {
+    padding-left: 50px;
+    position: relative;
+}
+
+.login-link::before {
+    background-image: url(../img/login.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+    height: 16px;
+    left: 24px;
+    opacity: 0.3;
+    position: absolute;
+    top: 26px;
+    width: 16px;
+}
+
 .user-navigation {
-    width: 140px;
+    display: flex;
+    max-width: 140px;
 }
 
 .container {
     margin: 0 auto;
     padding: 0 10px;
     width: 940px;
+}
+
+.benefits {
+    margin-bottom: 60px;
 }
 
 .benefits-list {
@@ -388,16 +437,35 @@ a {
     text-align: center;
 }
 
+.benefits-item p {
+    margin: 0 10px;
+}
+
 .benefits-item h3 {
     font-size: 30px;
     line-height: 42px;
+    margin: 0 0 60px 0;
+    position: relative;
+}
+
+.benefits-item h3::after {
+    background-color: #f7f4f1;
+    bottom: -30px;
+    content: '';
+    height: 20px;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 20px;
 }
 
 .content-columns {
     background-color: #f8f5f2;
-    background-image: url('../img/gradient_pattern.png');
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image: url('../img/line.png'), 
+     url('../img/gradient_pattern.png');
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
     color: #000000; 
     display: flex;
     justify-content: space-between;
@@ -405,25 +473,105 @@ a {
     padding: 55px 80px 50px;
 }
 
+.content-columns .button,
+.main-footer .button {
+    margin: 0;
+    padding: 10px;
+    width: 140px;
+}
+
 .news {
     width: 380px;
+    padding-right: 30px;
 }
 
 .gallery {
     width: 300px;
 }
 
+.gallery-content {
+    border: 7px solid #ffffff;
+    box-sizing: content-box;
+    height: 164px;
+    margin: 0;
+}
+
+.gallery img {
+    height: 164px;
+    width: 286px;
+}
+
+.gallery-buttons,
+.contacts-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-buttons {
+    margin-top: 40px;
+}
+
+.contacts-buttons {
+    margin-top: 23px;
+}
+
 .contacts {
     width: 380px;
+}
+
+.contacts p {
+    margin: 0 0 25px 0;
+}
+
+.contacts-container {
+    width: 300px;
 }
 
 .appointment {
     width: 300px;
 }
 
+.appointment-info {
+    margin: 0 0 15px 0;
+}
+
+.appointment-form {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item {
+    margin: 0 0 10px 0;
+    width: 140px;
+}
+
+.appointment-item label {
+    margin: 0 0 9px 15px;
+}
+
+.appointment-item input {
+    padding: 8px 15px 7px;
+    width: 140px;
+}
+
+.appointment-form .button {
+    margin-top: 10px;
+    width: 100%;
+}
+
 .content-columns h2 {
     font-size: 30px;
     line-height: 42px;
+    margin: 0 0 20px 0;
+}
+
+.news-item p {
+    margin: 0;
+}
+
+.news-item {
+    margin-bottom: 25px;
 }
 
 .news-item time {
@@ -532,6 +680,40 @@ a {
 .footer-social {
     margin-left: 80px;
     width: 140px;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.footer-social b,
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-button {
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    width: 43px;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path,
+.social-button:active path {
+    fill: #000000;
 }
 
 .footer-copyright {

@@ -172,29 +172,36 @@
             <p>
                 <label for="user-login" class="visually-hidden">Логин</label>
                 <input id="user-login" type="text" name="login" placeholder="Логин">
+                <span class="user-login-icon"></span>
             </p>
             <p>
                 <label for="user-password" class="visually-hidden">Пароль</label>
                 <input id="user-password" type="password" name="password" placeholder="Пароль">
+                <span class="user-password-icon"></span>
             </p>
             <p class="extra-actions">
-                <label class="remember-user-label" for="remember-user">
-                    <input type="checkbox" name="remember" id="remember-user" class="visually-hidden">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-            </p>
-            <a href="#">Я забыл пароль!</a>          
+                <input type="checkbox" name="remember" id="remember-user" class="visually-hidden">
+                <label class="remember-user-label" for="remember-user">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>   
+            </p>       
             <button class="button" type="submit" action="" method="post">Войти</button>
         </form>
-        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+        <button type="button" class="modal-close" aria-label="Закрыть">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 12 12">
+                <path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/>
+            </svg>
+        </button>
     </section>
     <section class="modal modal-map visually-hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
             <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">
         </p>
-        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+        <button type="button" class="modal-close" aria-label="Закрыть">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 12 12">
+                <path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/>
+            </svg>
+        </button>
     </section>
 </body>
 </html>

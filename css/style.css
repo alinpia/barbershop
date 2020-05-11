@@ -154,18 +154,23 @@ a {
 .product-meta-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
+}
+
+.product-description {
+    margin: 0;  
 }
 
 .product-info {
-    padding: 25px 10px 0 0;
+    margin-top: 55px;
+    padding: 20px 10px 0 0;
     width: 390px;
 }
 
 .product-photo-full {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     height: 498px;
-    margin: 0 0 20px 0;
+    margin: 55px 0 20px 0;
     width: 460px;
 }
 
@@ -195,11 +200,21 @@ a {
 }
 
 .product-price {
-    margin: 40px 0 70px 0;
+    display: flex;
+    margin: 40px 0 65px 0;
 }
 
 .product-price b {
     background-color: #e5e5e5;
+    padding: 13px 25px 11px;
+    text-align: center;
+    width: 109px;
+}
+
+.product-price .button {
+    margin-right: 0;
+    padding: 13px 18px 11px;
+    width: 78px;
 }
 
 .product-set h2 {
@@ -209,8 +224,23 @@ a {
 
 .product-set-list {
     list-style: none;
-    margin: 40px 0 0 0;
-    padding: 0;
+    margin: 32px 0 0 0;
+    padding: 0 0 0 21px;
+}
+
+.product-set-list li {
+    position: relative;
+}
+
+.product-set-list li::before {
+    background-color: #000000;
+    content: '';
+    height: 8px;
+    left: -21px;
+    position: absolute;
+    top: 7px;
+    transform: rotate(45deg);
+    width: 8px;
 }
 
 .filters legend {
@@ -504,16 +534,6 @@ a {
 .user-navigation a {
     display: block;
     padding: 25px 20px;
-}
-
-.website-navigation-current {
-    cursor: default;
-}
-
-.website-navigation-current a:hover,
-.website-navigation-current a:focus,
-.website-navigation-current a:active {
-    background-color: #000000;
 }
 
 .website-navigation-current span {

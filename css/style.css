@@ -21,6 +21,33 @@ body {
     text-transform: uppercase;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
 .main-header {
     margin-bottom: 75px;
 }
@@ -777,7 +804,17 @@ a {
     background-repeat: repeat;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     color: #000000;
+    display: none;
     position: fixed;
+}
+
+.modal-show {
+    animation: bounce 0.6s;
+    display: block;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-map {
@@ -790,8 +827,17 @@ a {
     width: 780px;
 }
 
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+}
+
 .modal-map p {
+    left: 0;
     margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .modal-map .modal-close {
@@ -861,6 +907,10 @@ a {
     right: -24px;
     top: 7px;
     width: 19px;
+}
+
+.modal-close:active {
+    outline: none;
 }
 
 .modal-close path {

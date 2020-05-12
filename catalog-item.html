@@ -123,36 +123,45 @@
             </p>
         </div>
     </footer>
-    <section class="modal modal-login visually-hidden">
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <form class="login-form" action="" method="post">
             <p>
                 <label for="user-login" class="visually-hidden">Логин</label>
-                <input id="user-login" type="text" name="login" placeholder="Логин">
+                <input id="user-login" type="text" name="login" placeholder="Логин" required>
+                <span class="user-login-icon"></span>
             </p>
             <p>
                 <label for="user-password" class="visually-hidden">Пароль</label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
+                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+                <span class="user-password-icon"></span>
             </p>
             <p class="extra-actions">
-                <label class="remember-user-label" for="remember-user">
-                    <input type="checkbox" name="remember" id="remember-user" class="visually-hidden">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-            </p>
-            <a href="#">Я забыл пароль!</a>          
+                <input type="checkbox" name="remember" id="remember-user" class="visually-hidden">
+                <label class="remember-user-label" for="remember-user">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>   
+            </p>       
             <button class="button" type="submit" action="" method="post">Войти</button>
         </form>
-        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+        <button type="button" class="modal-close" aria-label="Закрыть">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 12 12">
+                <path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/>
+            </svg>
+        </button>
     </section>
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1589304282409!5m2!1sru!2sby" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <p>
             <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">
         </p>
-        <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+        <button type="button" class="modal-close" aria-label="Закрыть">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 12 12">
+                <path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/>
+            </svg>
+        </button>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

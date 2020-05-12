@@ -103,19 +103,19 @@
                 <form class="appointment-form" action="" method="post">
                     <p class="appointment-item">
                         <label for="appointment-date">Дата</label>
-                        <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                        <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017" required>
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-time">Время</label>
-                        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00" required>
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-name">Ваше имя</label>
-                        <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+                        <input id="appointment-name" type="text" name="name" value="" placeholder="Борода" required>
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-phone">Телефон</label>
-                        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+                        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90" required>
                     </p>
                     <button class="button" type="submit">Отправить</button>
                 </form>
@@ -165,18 +165,18 @@
             </p>
         </div>
     </footer>
-    <section class="modal modal-login visually-hidden">
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <form class="login-form" action="" method="post">
             <p>
                 <label for="user-login" class="visually-hidden">Логин</label>
-                <input id="user-login" type="text" name="login" placeholder="Логин">
+                <input id="user-login" type="text" name="login" placeholder="Логин" required>
                 <span class="user-login-icon"></span>
             </p>
             <p>
                 <label for="user-password" class="visually-hidden">Пароль</label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
+                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
                 <span class="user-password-icon"></span>
             </p>
             <p class="extra-actions">
@@ -192,8 +192,9 @@
             </svg>
         </button>
     </section>
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1589304282409!5m2!1sru!2sby" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <p>
             <img src="img/map.jpg" width="766" height="560" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург.">
         </p>
@@ -203,5 +204,6 @@
             </svg>
         </button>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

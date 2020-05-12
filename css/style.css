@@ -921,7 +921,9 @@ input[type="checkbox"]:checked + .remember-user-label::before {
 }
 
 .remember-user-label:hover,
-.remember-user-label:active {
+.remember-user-label:active,
+input[type="checkbox"]:focus + .remember-user-label,
+input[type="checkbox"]:active + .remember-user-label {
     color: #663d15;
 }
 

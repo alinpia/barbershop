@@ -88,6 +88,8 @@ function toggleMapModal(flag) {
     const mapModal = document.querySelector('.modal-map');
 
     if (flag) {
+        setCloseBtnFocusForModal(mapModal);
+        
         return openModal(mapModal);
     }
 
@@ -97,6 +99,11 @@ function toggleMapModal(flag) {
 function setLoginInputFocus() {
     const loginInput = document.querySelector('#user-login');
     loginInput.focus();
+}
+
+function setCloseBtnFocusForModal(modal) {
+    const closeBtn = modal.querySelector('.modal-close');
+    closeBtn.focus();
 }
 
 function openModal(modal) {
